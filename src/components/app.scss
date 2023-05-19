@@ -1,0 +1,41 @@
+html,
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    #root{
+        height: 100%;
+        width: 100%;
+        .App{
+            height: 100%;
+            width: 100%;
+            .wrapper{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .wrapper__header{
+                    box-sizing: border-box;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 8px;
+                    height: 80px;
+                }
+                .wrapper__main{
+                    width: 100%;
+                    height: calc(100% - 80px);
+                    position: relative;
+                    overflow: hidden;
+                    .main__child{
+                        position: absolute;
+                        left: 50%;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
